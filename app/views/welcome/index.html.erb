@@ -1,0 +1,14 @@
+<h1> This is the welcome page please be nice thanks smile <h1>
+<div class="entry">
+  <h3 class="h3">Yo</h3>
+  <div class="outer">
+    <p><span>
+	<%= form_with url: "/button" , method: :get, local: true do |f| %>
+	    <%= f.label("TV Show:") %>
+	    <%= f.text_field :tv_show %>
+	    <%= f.submit "Generate playlist" %>
+	<% end %>
+	<span></p>
+  </div>
+</div>
+

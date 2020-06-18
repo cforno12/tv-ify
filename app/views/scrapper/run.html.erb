@@ -2,7 +2,11 @@
 <div class="entry">
   <h3 class="h3">First song on this page with artist</h3>
   <div class="outer">
-    <p><span><%= @formattedsearch %></span></p>
+    <p><span>
+	<% @formattedsearch.each_with_index do |s,i| %>
+	<%= i %> : <%= s %> <br>
+	<% end %>
+    </span></p>
   </div>
 </div>
 
