@@ -35,12 +35,7 @@ class ScrapperController < ApplicationController
       end
     end
     render template: 'scrapper/run'
-  end
-
-  def search
-    render template: 'scrapper/search'
-  end
-  
+  end  
 end
 
 #song title:
